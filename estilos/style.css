@@ -69,12 +69,38 @@ form > div.campo {
     display: block;
     height: 40px;
     border-radius: 5px;
-    margin: 5px 0px;
+    margin: 8px 0px;
+    
 
 }
 
 div.campo > label {
     display: none;
+}
+
+div.campo > i {
+    color: white;
+    /*background-color: black;*/
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+
+div.campo > input:focus-within {
+    background-color: white;
+}
+
+div.campo > input {
+    border: none;
+    background-color: rgb(85, 159, 169);
+    font-size: 1em;
+    width: calc(100%-44px);
+    
+    height: 100%;
+    color: white;
+    border-radius: 8px;
+    padding: 4px;
+    transform: translateY(-10px);
 }
 
 form > input[type=submit] {
@@ -116,5 +142,5 @@ form > a.botao:hover {
 
 form > a.botao > i {
     font-size: 0.8em;
-    padding-top: ;
+    
 }
